@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "528276101329",
+    "project_id": "proyecto-magana",
+    "storage_bucket": "proyecto-magana.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528276101329:android:f5e84a1b5f535d8916cdf0",
+        "android_client_info": {
+          "package_name": "com.example.proyecto_magana_dos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMwXuFbx3ja-om84YSf5UVMuNjhJjz6R4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

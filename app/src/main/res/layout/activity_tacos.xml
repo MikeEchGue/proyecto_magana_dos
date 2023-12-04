@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tacos">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="359dp"
+        android:layout_height="714dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.713">
+
+        <CheckBox
+            android:id="@+id/checkBoxSalsaRoja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salsa Roja"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.762"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.677" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCebolla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cebolla"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.581" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCilantro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cilantro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.715"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.581" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSalsaVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salsa Verde"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.678" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ingredientes"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aperitivos/Extras"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.48" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="101dp"
+            android:layout_height="52dp"
+            android:text="Numero de tacos"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.267"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.799" />
+
+        <Spinner
+            android:id="@+id/hola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.672"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.792" />
+
+        <Button
+            android:id="@+id/detalles"
+            android:layout_width="127dp"
+            android:layout_height="59dp"
+            android:layout_marginBottom="32dp"
+            android:onClick="detalles"
+            android:text="Detalles del Pedido"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.206"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/otro_platillo"
+            android:layout_width="127dp"
+            android:layout_height="59dp"
+            android:layout_marginBottom="32dp"
+            android:onClick="otro_platillo"
+            android:text="Agregar Platillo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.841"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioGroup
+            android:layout_width="314dp"
+            android:layout_height="248dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.127"
+            tools:ignore="MissingConstraints">
+
+
+            <RadioButton
+                android:id="@+id/radioButtonPastor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pastor" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSuadero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suadero" />
+
+            <RadioButton
+                android:id="@+id/radioButtonBistec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bistec" />
+
+            <RadioButton
+                android:id="@+id/radioButtonLonganiza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longaniza" />
+
+            <RadioButton
+                android:id="@+id/radioButtonCampechanos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Campechanos" />
+
+
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
