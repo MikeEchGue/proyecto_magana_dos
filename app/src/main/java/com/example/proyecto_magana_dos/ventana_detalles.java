@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -16,7 +17,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ventana_detalles extends AppCompatActivity {
-    String platillo, precio;
+    String platillo, precio, nombrePersona;
+    EditText edNombre;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +26,17 @@ public class ventana_detalles extends AppCompatActivity {
         setContentView(R.layout.activity_ventana_detalles);
         platillo = getIntent().getStringExtra("platillo");
         precio = getIntent().getStringExtra("precio");
+        edNombre = (EditText) findViewById(R.id.editTextTextPersonName);
 
     }
 
     public void enviar(View view) {
+        nombrePersona = edNombre.getText().toString();
         Map<String, Object> pedido = new HashMap<>();
         pedido.put("descripcion", platillo);
-        pedido.put("precio", precio);
+        pedido.put("persona", nombrePersona);
 
-        db.collection("Pedido").document("2")
+        db.collection("Pedido").document("4")
                 .set(pedido)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
